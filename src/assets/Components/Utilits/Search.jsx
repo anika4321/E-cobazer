@@ -12,12 +12,12 @@ const Search = () => {
     const handleSearch = (e) => {
         setSearch(e.target.value);
 
-
-       if (search.length > 3) {
+    if (search.length > 3) {
         fetch(`https://dummyjson.com/products/search?q=${search}`)
         .then(res => res.json())
         .then((data) => setSearchResult(data));
        }
+    
     }
 
     const handleClose = (e) => {

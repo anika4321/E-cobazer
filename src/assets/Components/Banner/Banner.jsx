@@ -23,7 +23,6 @@ const Banner = () => {
         nextEl : ".nextArrow",
       }}
       slidesPerView={1}
-      onSwiper={(swiper) => console.log(swiper)}
     >
 
       <div className="prevArrow lg:inline-flex hidden"><FaArrowLeft /></div>
